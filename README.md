@@ -1,41 +1,34 @@
 
-# pgrant
+# grantovik
 A GUI wrapper for a TF2 promotional [distribution script](https://gist.github.com/BenjaminSchaaf/e65c9dbccf32d49c23d97d94b61b95da), originally made by Benjamin Schaaf.
 
 ## Installation
-
-For Linux systems, you should already have Python 3 installed. You can check if you have it by typing in the following command in terminal:
-`python3`
 
 Install requests module with pip:
 
 `pip install requests`
 
-For Windows, download any Python version that is greater than 3.4 [here](https://www.python.org/downloads/), OR use the compiled executable from the release tab. Please double check that, Python 2.7 will **not** run this.
-
 ## Running 
 
-For Linux, download the [latest release](https://github.com/mkrl/pgrant/releases), put it anywhere on your disk. Open up a terminal in the directory you have this program in, and use `python3 grant.py` to run the program.
-
-For Windows, if you did install Python, you can either follow the Linux way, or just double-click on the file. Otherwise, if you downloaded the executable, simply run `grant.exe`
+Download the [latest release](https://https://github.com/poJilloy/grantovik/releases), put it anywhere on your disk. Open up a terminal in the directory you have this program in, and use `python3 grant.py` to run the program.
 
 ## Usage
 
 On startup, you'll see 2 windows: console and a window prompting your Steam API key and a promo ID that represents the item you are giving away.
 
 The program works with a file formatted in the following way: 1 steamID64 per line.
-SteamID64 is a 17-symbol digit string.
+steamID64 is a 17-symbol digit string.
 
 This is an example of how your input file can look like:
 
 `file.txt`:
 ```
-76561198071371521
-76561198071371521
-76561198071371511
-76561198071361421
-76561198071371551
-76561198071312451
+76561198030620256
+76561198030620256
+76561198030620256
+76561198030620256
+76561198030620256
+76561198030620256
 ```
 
 Fill in your API key and a Promo ID, press "Load a file" button and select the file you need. The path to the file will appear at the bottom of the window. 
@@ -48,12 +41,12 @@ You'll see something that looks like this:
 
 ```
 Granting [promo id] to:
-76561198071371521 [SUCCESS!]
-76561198071371511 [SUCCESS!]
-76561198071361421 [SUCCESS!]
-76561198071371551 [SUCCESS!]
-76561198071312451 [SUCCESS!]
-76561198071371551 [SUCCESS!]
+76561198030620256 [SUCCESS!]
+76561198030620256 [SUCCESS!]
+76561198030620256 [SUCCESS!]
+76561198030620256 [SUCCESS!]
+76561198030620256 [SUCCESS!]
+76561198030620256 [SUCCESS!]
 --------------------------
 Finished file processing
 ```
@@ -65,4 +58,4 @@ If the distribution fails, you'll see `[FAIL (reason)]`  instead of the usual su
 On every program launch, it will generate/overwrite `log.txt` file, at the same directory the program is running.
 This file is basically an echo of what you'll see in the console window.
 
-If you had some of your requests failed, be sure to save your log / steamids that failed into another place and try granting again later.
+If you had some of your requests failed, be sure to save your log / SteamIDs that failed into another place and try granting again later.
