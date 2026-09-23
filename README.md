@@ -3,9 +3,32 @@ A GUI wrapper for a TF2 promotional [distribution script](https://gist.github.co
 
 ## Installation
 
-Install requests module with pip:
+1. Install requests module:
+   ```bash
+   pip install requests
+   ```
+   
+2. Install tkinter module via package manager:
 
-`pip install requests`
+   Ubuntu / Debian:
+   ```bash
+   sudo apt install python3-tk
+   ```
+
+   Fedora:
+   ```bash
+   sudo dnf install python3-tkinter
+   ```
+
+   Arch:
+   ```bash
+   sudo pacman -S tk
+   ```
+
+   openSUSE:
+   ```bash
+   sudo zypper install python3-tk
+   ```
 
 ## Running
 
@@ -57,7 +80,7 @@ To see the "About" window, press `F1`.
 
 ## Logging
 
-The `log.txt` file is created in the directory the program runs from only when there is something to log — a launch without any activity leaves no file behind. New entries are appended to the existing log, so the history of previous runs is preserved.
+The `log.txt` file is created in the directory the program runs from only when there is something to log - a launch without any activity leaves no file behind. New entries are appended to the existing log, so the history of previous runs is preserved.
 This file is basically an echo of what you'll see in the terminal, with timestamps.
 
 If you had some of your requests failed, be sure to save your log / SteamIDs that failed into another place and try granting again later.
